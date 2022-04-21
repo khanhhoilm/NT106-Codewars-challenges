@@ -154,38 +154,15 @@ namespace Codewars_challenges_fundamentals
                 return (int)(year / 100) + ((year % 100 == 0) ? 0 : 1);
             }
         }
-        /// <summary>
-        /// Stop gninnipS My sdroW! by Nguyễn Anh Tài
-        /// </summary>
-        /// <param name="sentence"></param>
-        /// <returns></returns>
-        public static string SpinWords(string sentence)
-        {
-            var input = Console.ReadLine().Split(' ');
-            var output = new List<string>();
-            foreach (var word in input)
+
+        ///Function 1 - hello world by Trần Hưng Hoàn  20520513
+
+
+        public static string greet()
             {
-                if (word.Length <= 4)
-                {
-                    output.Add(word);
-                    continue;
-                }
-
-                // word reversal. This can be done using inbuilt functions as well
-                var wordArray = word.ToCharArray();
-                var current = string.Empty;
-                for (int i = word.Length - 1; i >= 0; i--)
-                {
-                    current += wordArray[i];
-                }
-
-                output.Add(current);
-                
-                
+                return "hello world!";
             }
-            return output.ToString(); 
-        }
-
+        
     }
 
 
