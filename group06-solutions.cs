@@ -43,13 +43,8 @@ public class Kata
       return dna.Replace('T', 'U');
     }
   
-}
-//Opposites Attract
-using System;
-
-public class LoveDetector
-{
-    public static bool lovefunc(int flower1, int flower2)
+  //Opposites Attract
+  public static bool lovefunc(int flower1, int flower2)
     { 
         int s= flower1 +flower2;
       if (s%2==1)
@@ -57,6 +52,5 @@ public class LoveDetector
       else return false;
       
     }
-
 }
 //
