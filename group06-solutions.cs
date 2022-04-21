@@ -35,5 +35,11 @@ public class Kata
   public static string NoSpace(string input)
     {
       return input.Replace(" ", String.Empty);
-    }  
+    } 
+  
+  //DNA2RNA
+  public string dnaToRna(string dna)
+    {
+      return dna.Replace('T', 'U');
+    }
 }
