@@ -31,5 +31,9 @@ public class Kata
     return Sum;
   }
   
-  
+  //Remove all whitespaces
+  public static string NoSpace(string input)
+    {
+      return input.Replace(" ", String.Empty);
+    }  
 }
