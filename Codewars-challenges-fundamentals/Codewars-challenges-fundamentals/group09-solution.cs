@@ -22,7 +22,7 @@ namespace Codewars_challenges_fundamentals
             if (t % 10 != 0)
                 while (t != 0)
                 {
-                    
+
                     c++;
                     a[c] = t % 10;
                     t = 10;
@@ -49,18 +49,18 @@ namespace Codewars_challenges_fundamentals
             if (check == value) return true;
             return false;
         }
-       
-        
+
+
         /// <summary>
         /// Find the smallest integer in the array Trần Hưng Hoàn
         /// </summary>
-            public static int FindSmallestInt(int[] args)
-            {
-                int lowest = args[0];
-                foreach (var input in args)
-                    if (input < lowest) lowest = input;
-                return lowest;
-            }
+        public static int FindSmallestInt(int[] args)
+        {
+            int lowest = args[0];
+            foreach (var input in args)
+                if (input < lowest) lowest = input;
+            return lowest;
+        }
 
 
 
@@ -87,29 +87,7 @@ namespace Codewars_challenges_fundamentals
 
         public static int DuplicateCount(string str)
         {
-            Stack checkedChars = new Stack();
-            Stack dupChars = new Stack();
-
-            str = str.ToLower();
-
-            for (int i = 1; i < str.Length; i++)
-            {
-                var alreadyCounted = checkedChars.Contains(str[i]) && dupChars.Contains(str[i]);
-
-                if (!checkedChars.Contains(str[i]))
-                {
-                    checkedChars.Push(str[i]);
-                }
-                else if (checkedChars.Contains(str[i]))
-                {
-                    dupChars.Push(str[i]);
-                }
-                else if (alreadyCounted)
-                {
-                    continue;
-                }
-            }
-            return dupChars.Count;
+            return str.ToLower().GroupBy(x => x).Select(y => y).Where(z => z.Count() > 1).Count();
         }
 
         /// <summary>
@@ -137,14 +115,14 @@ namespace Codewars_challenges_fundamentals
 
             return sum;
         }
-    double HamPow(int num, int exp)
-    {
-        double ket_qua = 1;
-        int i;
-        for (i = 1; i <= exp; i++)
-            ket_qua = ket_qua * num;
-        return ket_qua;
-    }
+        double HamPow(int num, int exp)
+        {
+            double ket_qua = 1;
+            int i;
+            for (i = 1; i <= exp; i++)
+                ket_qua = ket_qua * num;
+            return ket_qua;
+        }
         /// <summary>
         /// Credit Card Mask by  Dương Đức Anh 20520131
         /// </summary>
@@ -166,6 +144,18 @@ namespace Codewars_challenges_fundamentals
             else temp = cc;
             return temp;
         }
+        /// <summary>
+        /// Century From Year by Trần Hưng Hoàn _ 20520513
+        /// </summary>
+        public static class Kata
+        {
+            public static int СenturyFromYear(int year)
+            {
+                return (int)(year / 100) + ((year % 100 == 0) ? 0 : 1);
+            }
+        }
     }
+
+        
 }
 
