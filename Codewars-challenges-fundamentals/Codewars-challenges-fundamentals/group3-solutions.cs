@@ -25,6 +25,13 @@ namespace Codewars_challenges_fundamentals
          */
         public static class Kata
         {
+            public class CustomMath
+            {
+                public static int multiply(int a, int b)
+                {
+                    return a * b;
+                }
+            }
             public static string greet()
             {
                 return "hello world!";
