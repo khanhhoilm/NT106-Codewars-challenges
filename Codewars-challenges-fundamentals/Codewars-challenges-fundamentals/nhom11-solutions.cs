@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Codewars_challenges_fundamentals
 {
     //Phan Minh Đạt - 20521177
