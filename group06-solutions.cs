@@ -1,7 +1,7 @@
 //Convert a Number to a String!
 //Tran Hoang Long 20520625
 using System;
-using System.Linq;
+using System.Linq; //Sum of Positives
 
 public class Kata
 {
@@ -18,4 +18,18 @@ public class Kata
       }
     return (name + " does not play banjo");
   }
+  
+  //Sum of Positives
+  public static int PositiveSum(int[] arr)
+  {
+    int Sum = 0;
+    foreach (int i in arr){
+      if (i > 0) {
+        Sum += i;
+      }
+    }
+    return Sum;
+  }
+  
+  
 }
