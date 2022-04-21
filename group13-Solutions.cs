@@ -1,6 +1,9 @@
 using System;
 //Đỗ Xuân Long - 20520619
-
+//Đoàn Đỗ Lâm Trường - 20520338
+//Phạm Văn Ngọ - 20520254
+//Lê Hùng Tiến - 18521484
+//Nguyễn Thanh Nam - 20520913
 //Bài 1:
 //Write a function which converts the input string to uppercase.
 public class Kata
