@@ -1,6 +1,7 @@
 //Convert a Number to a String!
 //Tran Hoang Long 20520625
 using System;
+using System.Linq;
 
 public class Kata
 {
