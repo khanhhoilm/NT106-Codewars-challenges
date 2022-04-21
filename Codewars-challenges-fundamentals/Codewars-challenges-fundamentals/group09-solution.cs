@@ -159,12 +159,44 @@ namespace Codewars_challenges_fundamentals
 
 
         public static string greet()
-            {
-                return "hello world!";
-            }
-        
+        {
+            return "hello world!";
+        }
+        /// <summary>
+        /// Exes and Ohs
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static bool XO(string input)
+        {
+            return input.ToLower().Count(i => i == 'x') == input.ToLower().Count(i => i == 'o');
+        }
+        /// <summary>
+        /// Friend or Foe?
+        /// </summary>
+        /// <param name="names"></param>
+        /// <returns></returns>
+        public static IEnumerable<string> FriendOrFoe(string[] names)
+        {
+            return names.Where(name => name.Length == 4);
+        }
+        /// <summary>
+        /// Find the next perfect square!   
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
+        public static long FindNextSquare(long num)
+        {
+            double root = Math.Sqrt(num);
+
+            if (root % 1 != 0)
+                return -1;
+
+            return (long)Math.Pow(root + 1, 2);
+
+        }
+
     }
-
-
-}
+    }
+ 
 
