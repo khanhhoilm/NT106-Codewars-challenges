@@ -8,19 +8,13 @@ public class Kata
   {
     return num.ToString();
   }
-}
-
-//Are You Playing Banjo?
-using System;
-
-public class Kata
-{
+  
+  //Are You Playing Banjo?
   public static string AreYouPlayingBanjo(string name)
   {
     if (name[0] == 'R' || name[0] == 'r') {
       return (name + " plays banjo");
       }
-      return (name + " does not play banjo");
-    
+    return (name + " does not play banjo");
   }
 }
